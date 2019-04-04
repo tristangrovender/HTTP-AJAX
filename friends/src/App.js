@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Data from './Data';
 import './App.css';
 import axios from 'axios';
 
@@ -27,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        Friends!
+        <Data friends={this.state.items} />
       </div>
     );
   }
